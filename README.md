@@ -8,6 +8,10 @@ The main features of this application is registering a users name, email, passwo
 * Laravel 11
 * PHP ^8.0"
 
+# ThirdParty Libraries
+* Bootstrap
+* FingerprintJS v4.2.1
+
 # Installation
 * `git clone https://github.com/JAPHETHNYARANGA/fingerprint-auth-app.git`
 * `cd project-directory`
