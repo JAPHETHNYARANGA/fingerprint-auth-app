@@ -18,7 +18,8 @@ The main features of this application is registering a users name, email, passwo
 * `php artisan serve`
 
 # Testing
-
+To run the test cases for th application, just run 
+`php artisan test`
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
