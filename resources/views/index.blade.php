@@ -15,7 +15,7 @@
 
         <!-- Styles -->
         
-        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/index.css') }}" rel="stylesheet">
         
     </head>
     <body class="antialiased">
