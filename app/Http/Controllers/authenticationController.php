@@ -23,6 +23,7 @@ class authenticationController extends Controller
                 'name' => $validatedData['name'],
                 'email' => $validatedData['email'],
                 'password' => bcrypt($validatedData['password']),
+                // storing the fingerprint as encrypted or hashed brings an error while decrypting this this needs to be fixed
                 'fingerprint' => $validatedData['fingerprint'],
             ]);
 

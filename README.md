@@ -12,6 +12,9 @@ The main features of this application is registering a users name, email, passwo
 * Bootstrap
 * FingerprintJS v4.2.1
 
+# Known Bugs
+Fingerprint data is not hashed or encrypted, it can be encrypted in storage but theres an error when fetching the data.
+
 # Installation
 * `git clone https://github.com/JAPHETHNYARANGA/fingerprint-auth-app.git`
 * `cd project-directory`
