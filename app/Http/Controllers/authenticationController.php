@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class authenticationController extends Controller
 {
@@ -36,9 +37,29 @@ class authenticationController extends Controller
         }
     }
 
-    public function loginUser(Request $reuest){
+    public function loginUser(Request $request){
         try{
+            // Check if the request contains fingerprint data
+            if ($request->filled('fingerprint')) {
+                // Find the user by their fingerprint
+                $user = User::where('fingerprint', $request->input('fingerprint'))->first();
 
+                if ($user) {
+                    // Log in the user
+                    Auth::login($user);
+                    return redirect('/home')->with('success', 'User logged in successfully');
+                } else {
+                    return redirect('/')->with('error', 'Fingerprint not recognized');
+                }
+            } else {
+                // Attempt to log in with email and password
+                $credentials = $request->only('email', 'password');
+                if (Auth::attempt($credentials)) {
+                    return redirect('/home')->with('success', 'User logged in successfully');
+                } else {
+                    return redirect('/')->with('error', 'Invalid email or password');
+                }
+            }
         } catch (\Throwable $th) {
             // Return error response
             return response()->json([

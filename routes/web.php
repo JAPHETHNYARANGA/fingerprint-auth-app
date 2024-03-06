@@ -29,3 +29,5 @@ Route::get('/home', function () {
 
 Route::post('/register', [AuthenticationController::class, 'registerUser'])->name('register');
 
+Route::post('/', [AuthenticationController::class, 'loginUser'])->name('login');
+
