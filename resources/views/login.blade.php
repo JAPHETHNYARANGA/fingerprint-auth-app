@@ -61,7 +61,7 @@
 
                   <div class="form-check d-flex justify-content-center mb-5">
                     <label class="form-check-label" for="form2Example3">
-                      Already have an account? <a href="#!">Register</a>
+                      Already have an account? <a href="register">Register</a>
                     </label>
                   </div>
                   
