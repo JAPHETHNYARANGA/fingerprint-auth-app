@@ -22,3 +22,8 @@ The main features of this application is registering a users name, email, passwo
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Screenshots
+![alt text](<Screenshot from 2024-03-06 23-07-46.png>)
+
+![alt text](<Screenshot from 2024-03-06 23-08-32.png>)
