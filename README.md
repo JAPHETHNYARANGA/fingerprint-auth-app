@@ -9,13 +9,13 @@ The main features of this application is registering a users name, email, passwo
 * PHP ^8.0"
 
 # Installation
-`git clone https://github.com/JAPHETHNYARANGA/fingerprint-auth-app.git`
-`cd project-directory`
-`composer install`
-`create environment file in the root folder `
-`php artisan key:generate`
-`php artisan migrate`
-`php artisan serve`
+* `git clone https://github.com/JAPHETHNYARANGA/fingerprint-auth-app.git`
+* `cd project-directory`
+* `composer install`
+* `create environment file in the root folder `
+* `php artisan key:generate`
+* `php artisan migrate`
+* `php artisan serve`
 
 # Testing
 
