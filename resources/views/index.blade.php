@@ -18,7 +18,7 @@
         <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 
         <!-- Include FingerprintJS library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
+        {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script> --}}
 
         <script src="{{ asset('js/index.js') }}"></script>
         
