@@ -68,4 +68,22 @@ class authenticationController extends Controller
             ], 500);
         }
     }
+
+    public function fetchUser()
+    {
+        try {
+            $user = Auth::user();
+            $email = $user->email;
+            $name = $user->name;
+
+            // Return the fetched user data
+            return view('homepage', compact('name', 'email'));
+        } catch (\Throwable $th) {
+            // Return error response
+            return response()->json([
+                'status' => false,
+                'message' => $th->getMessage()
+            ], 500);
+        }
+    }
 }

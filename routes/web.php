@@ -22,12 +22,12 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/home', function () {
-    return view('homepage');
-});
 
 
 Route::post('/register', [AuthenticationController::class, 'registerUser'])->name('register');
 
 Route::post('/', [AuthenticationController::class, 'loginUser'])->name('login');
+
+Route::get('/home', [authenticationController::class, 'fetchUser'])->middleware('auth:sanctum');
+
 

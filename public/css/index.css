@@ -5,3 +5,15 @@
 .center-button{
     left: 50%;
 }
+
+.main-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    color: blue;
+}
+.fetched-data{
+    text-align: center;
+    font-size: 2rem;
+    color: gray;
+}
